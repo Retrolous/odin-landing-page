@@ -14,6 +14,7 @@ h1 {
     color: #F9FAF8;
     font-weight: bold;
     font-size: 48px;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -47,7 +48,8 @@ h3 {
 
 .header{
     flex-direction: column;
-    background-color: #1F2937;
+    background: rgb(59,66,74);
+    background: linear-gradient(45deg, rgba(59,66,74,1) 0%, rgba(46,52,62,1) 35%, rgba(31,41,55,1) 100%); 
     padding: 16px 15% 120px;
     
     
@@ -66,11 +68,26 @@ h3 {
 .header-image{
     display: flex;
     flex: 0 0 50%;
+    max-width: 50%;
     justify-content: center;
     align-items: center;
     background-color: ghostwhite;
+    border-radius: 30px;
 }
 
+.header-image img {
+    max-width: 100%;
+    border-radius: 30px;
+    border: white 3px solid;
+    transition: all .5s ease;
+    
+}
+
+.header-image img:hover {
+    transform: scale(1.1);
+    filter: sepia(0.1);
+    transition: all .5s ease;
+}
 .header-links{
     gap: 24px;
 }
@@ -79,23 +96,23 @@ h3 {
     display: flex;
     flex: 1 1 50%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
 }
 
-.header-text > button {
+.header-text button {
     border: none;
     border-radius: 12px;
     background-color: #3882F6;
     padding: 8px 16px;
-    width: 35%;
+    width: 100%;
     color: rgb(240, 233, 233);
     font-weight: bold;
     font-size: 16px;
 }
 
-.header-text > p {
+.header-text p {
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -135,9 +152,7 @@ blockquote {
 }
 
 .logo {
-    color: #F9FAF8;
-    font-weight: bold;
-    font-size: 24px;
+    filter: brightness(1.25);
 }
 
 .main-card-wrapper {
@@ -192,12 +207,23 @@ blockquote {
     font-size: 18px;
 }
 
-img {
+figure img {
     outline: none !important;
     box-shadow: none !important;
     border: solid #3882F6 5px; 
     border-radius: 16px;
+    object-fit: cover;
+    transition: all .5s ease;
 }
+
+
+figure img:hover {
+    transform: scale(1.05);
+    filter: sepia(0.1);
+    transition: all .5s ease;
+}
+
+
 
 footer {
     background-color: #1F2937;
