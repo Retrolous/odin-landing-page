@@ -2,6 +2,11 @@
     display: flex;
     
 }
+
+html{
+    max-height: 100vh;
+}
+
 *, *::before, *::after {
     margin:0;
     padding:0;
@@ -24,6 +29,7 @@
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 .header-links{
@@ -40,7 +46,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .header-text > p {
@@ -89,7 +96,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 17.5% 120px;
+    padding: 48px 17.5% 104px;
     gap: 32px;
 }
 
@@ -118,6 +125,7 @@ img {
 figure{
     display: table;
     margin: 0px;
+    margin-bottom: 16px;
 }
 
 figcaption {
@@ -125,9 +133,88 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .main-quote {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 25% 120px 25%;
+}
+
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
     
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quote-wrapper p {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 13% 100px 13%;
+}
+
+.main-sign-up-body {
+    display: flex;
+    padding: 50px 140px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    gap: 200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-sign-up-body-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.main-sign-up-body-text  p {
+    color: #dadada;
+    font-size: 18px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button-wrapper button {
+    padding: 6px 40px;
+    font-size: 18px;
+    background-color: #3882F6;
+    border: 3px solid #F9FAF8;
+    border-radius: 8px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+footer {
+    padding: 40px;
+    background-color: #1F2937;
+    text-align: center;
+    color: #F9FAF8;
 }
